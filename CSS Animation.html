@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        position: relative;
+    }
+    div{
+        background-color: aqua;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: 10;
+        animation-direction: normal;
+    }
+    @keyframes move 
+    {
+        0%
+        {
+            left: 0px;
+            background-color: cornflowerblue;
+        }
+        100%
+        {
+            left: 300px;
+            border-radius: 50px;
+            background-color: blanchedalmond;
+        }
+    }
+    #div1{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        position: relative;
+    }
+    #div1{
+        background-color: rgb(114, 216, 216);
+        animation-name: moment;
+        animation-duration: 3s;
+        animation-iteration-count: 10;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes moment
+    {
+        0%
+        {
+            left: 0px;
+            background-color: rgb(13, 39, 86);
+        }
+        100%
+        {
+            left: 300px;
+            border-radius: 50px;
+            background-color: rgb(205, 152, 72);
+        }
+    }
+    #div2{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        position: relative;
+    }
+    #div2{
+        background-color: rgb(56, 120, 120);
+        animation-name: moments;
+        animation-duration: 3s;
+        animation-iteration-count: 10;
+        animation-direction: reverse;
+    }
+    @keyframes moments
+    {
+        0%
+        {
+            left: 0px;
+            background-color: rgb(74, 97, 139);
+        }
+        100%
+        {
+            left: 300px;
+            border-radius: 50px;
+            background-color: rgb(134, 88, 20);
+        }
+    }
+</style>
+<body>
+    <div></div>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>
