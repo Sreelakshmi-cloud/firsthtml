@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo">
+    <button onclick="display()">Try it</button>
+    <p id="Result"></p>
+    <script>
+        function display()
+        {
+            var text
+            var fruits = document.getElementById("demo").value
+
+            switch(fruits)
+            {
+                case "Banana":
+                    text = "Banana is Yellow in colour"
+                    break
+                case "Apple":
+                    text = "Apple is Red in colour"
+                    break
+                case "Orange":
+                    text = "Orange is Orange in colour"
+                    break
+                default:
+                    text = "Not bad"
+            }
+            document.getElementById("Result").innerHTML = text
+        }
+    </script>
+</body>
+</html>

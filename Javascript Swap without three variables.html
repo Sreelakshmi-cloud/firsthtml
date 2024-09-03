@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter first number</td>
+            <td><input type="text" id="demo"></td>
+        </tr>
+        <tr>
+            <td>Enter the second number</td>
+            <td><input type="text" id="demo1"></td>
+        </tr>
+    </table>
+    <button onclick="display()">Swap</button>
+    <table>
+        <tr>
+            <td>first number</td>
+            <td><input type="text" id="demo2"></td>
+        </tr>
+        <tr>
+            <td>second number</td>
+            <td><input type="text" id="demo3"></td>
+        </tr>
+    </table>
+    <script>
+        function display()
+        {
+            var a=Number(document.getElementById("demo").value)
+            var b=Number(document.getElementById("demo1").value)
+            a=a+b
+            b=a-b
+            a=a-b
+            document.getElementById("demo2").value=a
+            document.getElementById("demo3").value=b
+        }
+    </script>
+</body>
+</html>
